@@ -29,7 +29,7 @@ public class FormularioTest {
     void testEnumbyId() {
         EmployeeType type = EmployeeType.valueOfId(2);
         switch(type){
-            case PROGRAMMER -> {
+            case DEVELOPER -> {
                 System.out.println("yes");
             }
         }

@@ -11,7 +11,7 @@ package com.umg.laboratorio1.enums;
 public enum EmployeeType {
     MANAGER(0, "Gerente"),
     EXECUTIVE(1, "Ejecutivo"),
-    PROGRAMMER(2,"Programador"),
+    DEVELOPER(2,"Programador"),
     SECRETARY(3,"Secretaria");
 
     private final int id;

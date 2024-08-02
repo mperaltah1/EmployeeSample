@@ -4,11 +4,14 @@
  */
 package com.umg.laboratorio1;
 
+import com.umg.laboratorio1.classes.Developer;
 import com.umg.laboratorio1.classes.Employee;
 import com.umg.laboratorio1.classes.Executive;
+import com.umg.laboratorio1.classes.Manager;
 import com.umg.laboratorio1.classes.Secretary;
 import com.umg.laboratorio1.enums.EmployeeType;
 import static com.umg.laboratorio1.enums.EmployeeType.EXECUTIVE;
+import static com.umg.laboratorio1.enums.EmployeeType.MANAGER;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
@@ -211,8 +214,14 @@ public class Formulario extends javax.swing.JFrame {
         EmployeeType type = EmployeeType.valueOfId(cmbEmpType.getSelectedIndex());
         Employee emp;
         switch (type) {
+            case MANAGER -> {
+                emp = new Manager(dpi, name, hours);
+            }
             case EXECUTIVE -> {
                 emp = new Executive(dpi, name, hours);
+            }
+            case DEVELOPER -> {
+                emp = new Developer(dpi, name, hours);
             }
             case SECRETARY -> {
                 emp = new Secretary(dpi, name, hours);

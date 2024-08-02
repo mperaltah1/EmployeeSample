@@ -8,11 +8,10 @@ package com.umg.laboratorio1.classes;
  *
  * @author mrph0
  */
-public class Executive extends Employee {
+public class Executive extends Manager {
     
     public Executive(int dpi, String name, int hours){
         super(dpi, name, hours);
         hourPrice = 200;
-        discountPercent = 7;
     }
 }

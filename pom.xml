@@ -19,4 +19,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <name>EmployeeSample</name>
 </project>
